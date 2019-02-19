@@ -4,13 +4,12 @@
 <hibernate-configuration>
    <session-factory>
       <property name="hbm2ddl.auto">update</property>
-      <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+      <property name = "hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
       <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
       <!-- Assume test is the database name -->
-      <property name = "hibernate.connection.url">jdbc:mysql://localhost/hibernate?characterEncoding=ISO-8859-9</property>
+      <property name = "hibernate.connection.url">jdbc:mysql://localhost/tutorial_hibernate?characterEncoding=ISO-8859-9</property>
       <property name = "hibernate.connection.username">root</property>
       <property name = "hibernate.connection.password"></property>
-      <!-- List of XML mapping files -->
 
       
    </session-factory>
